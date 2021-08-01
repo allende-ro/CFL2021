@@ -1,0 +1,16 @@
+{
+  "name": "casino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.4.8",
+    "random-number-v1": "^1.0.4",
+    "readline-sync": "^1.4.10"
+  }
+}
