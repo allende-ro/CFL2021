@@ -5,16 +5,16 @@ import {Ruleta} from './ruleta';
 
 export class Casino {
 
-    public Tragamonedas: Tragamonedas;
-    public TragamonedasPlus: TragamonedaPlus;
-    public JuegoDados: Dados;
-    public Ruleta:Ruleta;
+    public tragamonedas: Tragamonedas;
+    public tragamonedasPlus: TragamonedaPlus;
+    public juegoDados: Dados;
+    public ruleta:Ruleta;
     
     public constructor(){
-        this.Tragamonedas = new Tragamonedas(); 
-        this.TragamonedasPlus = new TragamonedaPlus();
-        this.Ruleta = new Ruleta();
-        this.JuegoDados = new Dados();
+        this.tragamonedas = new Tragamonedas(); 
+        this.tragamonedasPlus = new TragamonedaPlus();
+        this.ruleta = new Ruleta();
+        this.juegoDados = new Dados();
     }
 
 

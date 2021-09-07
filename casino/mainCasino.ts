@@ -13,30 +13,30 @@ let opcionUsuario: String = RLS.question();
 while (opcionUsuario == "1" || opcionUsuario == "2" || opcionUsuario == "3" || opcionUsuario == "4") {
     switch (opcionUsuario) {
         case "1":
-            casinoAllende.Ruleta.iniciarApuesta();
+            casinoAllende.ruleta.iniciarApuesta();
             console.log("elija una opcion para VOLVER a jugar: 1- Ruleta, 2-Dados, 3-TragaMonedas, 4- TragaMonedasPlus, o cualquier otra tecla para salir.");
             opcionUsuario = RLS.question();
             break;
         case "2":
-            let cantidadDados: Number = RLS.questionInt("Ingrese la cantidad de dados con los que desea jugar: ");
-            let apuestaUsuario: Number = RLS.questionInt("Ingrese su apuesta: ");
-            casinoAllende.JuegoDados.setCantidadDados(cantidadDados);
-            casinoAllende.JuegoDados.setMontoApuesta(apuestaUsuario);
-            casinoAllende.JuegoDados.jugar();
+            let cantidadDados: number = RLS.questionInt("Ingrese la cantidad de dados con los que desea jugar: ");
+            let apuestaUsuario: number = RLS.questionInt("Ingrese su apuesta: ");
+            casinoAllende.juegoDados.setCantidadDados(cantidadDados);
+            casinoAllende.juegoDados.setMontoApuesta(apuestaUsuario);
+            casinoAllende.juegoDados.jugar();
             console.log("Elija una opcion para VOLVER a jugar: 1- Ruleta, 2-Dados, 3-TragaMonedas, 4- TragaMonedasPlus, o cualquier otra tecla para salir.");
             opcionUsuario = RLS.question();
             break;
         case "3":
             apuestaUsuario = RLS.questionInt("Ingrese su apuesta: ");
-            casinoAllende.Tragamonedas.setapuesta(apuestaUsuario);
-            casinoAllende.Tragamonedas.comenzar();
+            casinoAllende.tragamonedas.setapuesta(apuestaUsuario);
+            casinoAllende.tragamonedas.comenzar();
             console.log("elija una opcion para VOLVER a jugar: 1- Ruleta, 2-Dados, 3-TragaMonedas, 4- TragaMonedasPlus, o cualquier otra tecla para salir.");
             opcionUsuario = RLS.question();
             break;
         case "4":
             apuestaUsuario = RLS.questionInt("Ingrese su apuesta: ");
-            casinoAllende.TragamonedasPlus.setapuesta(apuestaUsuario);
-            casinoAllende.TragamonedasPlus.comenzar();
+            casinoAllende.tragamonedasPlus.setapuesta(apuestaUsuario);
+            casinoAllende.tragamonedasPlus.comenzar();
             console.log("elija una opcion para VOLVER a jugar: 1- Ruleta, 2-Dados, 3-TragaMonedas, 4- TragaMonedasPlus, o cualquier otra tecla para salir.");
             opcionUsuario = RLS.question();
             break;

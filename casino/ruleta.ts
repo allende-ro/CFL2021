@@ -2,10 +2,10 @@ import * as RLS from "readline-sync"
 import * as fs from 'fs'
 
 export class Ruleta {
-  private resultado: Number;
-  private montoMinimo: Number;
-  private montoApostado: Number;
-  private apuesta: Number;
+  private resultado: number;
+  private montoMinimo: number;
+  private montoApostado: number;
+  private apuesta: number;
 
   constructor() {
     this.montoApostado = 0;
@@ -29,7 +29,7 @@ export class Ruleta {
 
   public girarRuleta():void {
     let randomNumberGenerator = require('random-number-v1');
-    let numeroRandom: Number = randomNumberGenerator(0, 32);
+    let numeroRandom: number = randomNumberGenerator(0, 32);
     console.log("Salio el numero ", numeroRandom);
 
     if (this.apuesta == numeroRandom) {
@@ -48,8 +48,8 @@ export class Ruleta {
     }
   }
 
-  public getPremio(): Number {
-    this.resultado = (Number(this.apuesta) * 36);
+  public getPremio(): number {
+    this.resultado = ((this.apuesta) * 36);
     return this.resultado;
   }
 

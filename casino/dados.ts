@@ -3,20 +3,20 @@ import * as fs from 'fs'
 
 export class Dados {
 
-    private montoApostado: Number;
-    private cantDados: Number;
-    private resultadoCasino: Number;
-    private resultadoPersona: Number;
+    private montoApostado: number;
+    private cantDados: number;
+    private resultadoCasino: number;
+    private resultadoPersona: number;
 
 
     public constructor() {
     }
 
-    public setCantidadDados(cantidadDados: Number):void{
+    public setCantidadDados(cantidadDados: number):void{
         this.cantDados = cantidadDados;
     }
 
-    public setMontoApuesta(apuesta: Number):void{
+    public setMontoApuesta(apuesta: number):void{
         this.montoApostado = apuesta;
     }
 
@@ -62,8 +62,8 @@ export class Dados {
         }
     }
 
-    getpremio(): Number {
-        let premio: Number = Number(this.montoApostado) * Number(this.cantDados);
+    getpremio(): number {
+        let premio: number = (this.montoApostado) *(this.cantDados);
         return premio;
       }
 

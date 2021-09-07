@@ -32,33 +32,33 @@ export class TragamonedaPlus extends Tragamonedas {
       });
     } else if ((carrete1 == carrete2) && (carrete2 == carrete3)) {
       console.log("¡¡Bien hecho!!Usted recupero el dinero de su apuesta", this.apuesta)
-      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salieron tres figuras iguales consecutivas. El jugador recupera su apuesta' + '\n' +'---------------------'+ '\n';
+      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ''+ (this.figuras[carrete3])+' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salieron tres figuras iguales consecutivas. El jugador recupera su apuesta' + '\n' +'---------------------'+ '\n';
       fs.appendFile('resultadoTragamonedasPlus.txt', result, function (err) {
         if (err) throw err;
       });
     } else if ((carrete2 == carrete3) && (carrete3 == carrete4)) {
       console.log("¡¡Bien hecho!! Usted recupero el dinero de su apuesta", this.apuesta)
-      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salieron tres figuras iguales consecutivas. El jugador recupera su apuesta'  + '\n' +'---------------------'+ '\n';
+      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ''+ (this.figuras[carrete3])+' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salieron tres figuras iguales consecutivas. El jugador recupera su apuesta'  + '\n' +'---------------------'+ '\n';
       fs.appendFile('resultadoTragamonedasPlus.txt', result, function (err) {
         if (err) throw err;
       });
     } else if ((carrete3 == carrete4 && carrete4 == carrete5)) {
       console.log("¡¡Bien hecho!! Usted recupero el dinero de su apuesta", this.apuesta)
-      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salierom tres figuras iguales consecutivas. El jugador recupera su apuesta' + '\n' +'---------------------'+ '\n';
+      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ''+ (this.figuras[carrete3])+' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Salierom tres figuras iguales consecutivas. El jugador recupera su apuesta' + '\n' +'---------------------'+ '\n';
       fs.appendFile('resultadoTragamonedasPlus.txt', result, function (err) {
         if (err) throw err;
       });
     } else {
       console.log("Perdio, Vuelva a intentarlo")
-      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Ninguna figura es igual. El jugador pierde su dinero.' + '\n' +'---------------------'+ '\n';
+      let result: string = 'Figuras que salieron en la maquina :' + ' ' + (this.figuras[carrete1])  + ' '+  (this.figuras[carrete2])  + ''+ (this.figuras[carrete3])+' '+ (this.figuras[carrete4])  + ''+ (this.figuras[carrete5])  + ' '+ 'Ninguna figura es igual. El jugador pierde su dinero.' + '\n' +'---------------------'+ '\n';
       fs.appendFile('resultadoTragamonedasPlus.txt', result, function (err) {
         if (err) throw err;
       });
     }
   }
 
-  getpremio(): Number {
-    let premio: Number = (Number(this.apuesta) * 5);
+  getpremio(): number {
+    let premio: number = ((this.apuesta) * 5);
     return premio;
   }
 }

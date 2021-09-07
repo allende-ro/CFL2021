@@ -5,11 +5,11 @@ import * as fs from 'fs'
 
 export class Tragamonedas {
   //atributos 
-  protected premio: Number;
-  protected montoMin: Number;
-  protected cantCarretes: Number;
+  protected premio: number;
+  protected montoMin: number;
+  protected cantCarretes: number;
   protected figuras: string[];
-  protected apuesta: Number;
+  protected apuesta: number;
 
   //costructor de objetos
   constructor() {
@@ -59,12 +59,12 @@ export class Tragamonedas {
 
   }
 
-  public setapuesta(apuestaJugador: Number): void {
+  public setapuesta(apuestaJugador: number): void {
     this.apuesta = apuestaJugador;
   }
 
-  public getpremio(): Number {
-    let premio: Number = (Number(this.apuesta) * 2);
+  public getpremio(): number {
+    let premio: number = ((this.apuesta) * 2);
     return premio;
   }
 
