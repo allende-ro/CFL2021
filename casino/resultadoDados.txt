@@ -1,0 +1,8 @@
+Numero que salio en los dados del jugador :11
+Numero que salio en los dados del casino 7
+Resultado: Gano el jugador
+---------------------
+Numero que salio en los dados del jugador :17
+Numero que salio en los dados del casino: 16
+Resultado: Gano el jugador
+---------------------

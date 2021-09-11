@@ -1,0 +1,26 @@
+Numero que salio en la ruleta :18
+Numero apostado 4
+Resultado: Gano el casino
+Numero que salio en la ruleta :7
+Numero apostado 6
+Resultado: Gano el casino
+Numero que salio en la ruleta :2
+Numero apostado 3
+Resultado: Gano el casino
+NaN
+Numero que salio en la ruleta :24
+Numero apostado 5
+Resultado: Gano el casino
+---------------------
+Numero que salio en los dados del jugador :5
+Numero que salio en los dados del casino 9
+Resultado: Gano el casino
+---------------------
+Numero que salio en los dados del jugador :10
+Numero que salio en los dados del casino 7
+Resultado: Gano el jugador
+---------------------
+Numero que salio en los dados del jugador :9
+Numero que salio en los dados del casino 4
+Resultado: Gano el jugador
+---------------------

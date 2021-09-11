@@ -1,0 +1,14 @@
+Figuras que salieron en la maquina :266Dos figuras son iguales. Jugador salvo su dinero apostado
+---------------------
+Figuras que salieron en la maquina :PerasPerasKiwiDos figuras son iguales. Jugador salvo su dinero apostado
+---------------------
+Figuras que salieron en la maquina :PerasDiamanteAnilloNinguna de las figuras son iguales. Jugador perdio
+---------------------
+Figuras que salieron en la maquina :
+Moneda
+CartaPoker
+Kiwi
+Ninguna de las figuras son iguales. Jugador perdio
+---------------------
+Figuras que salieron en la maquina : Bananas Diamante Bananas Dos figuras son iguales. Jugador salvo su dinero apostado
+---------------------
